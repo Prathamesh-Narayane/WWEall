@@ -32,7 +32,14 @@ h1 {
   bottom: 0;
   z-index: 1000;
 }
+h1 a {
+  color: #e50914;
+  text-decoration: none;
+}
 
+h1 a:hover {
+  text-decoration: underline;
+}
 .buttons.raw-bg {
   background-image: url('images/raw.jpg');
   background-size: cover;
