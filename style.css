@@ -10,16 +10,22 @@ body {
   min-height: 50vh;
 }
 
+
 header img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+.logo {
+  width: 100px;
+  margin: 0% auto 0%;
+  display: block;
+}
 
 h1 {
   font-size: 2rem;
-  color: #e50914;
-  margin-top: 20px;
+  color: #ffffff;
+  margin-top: 2px;
 }
 
 .buttons {
@@ -72,5 +78,62 @@ button {
 }
 
 button:hover {
-  background-color: #690209;
+  background-color: #500005;
 }
+
+.smackdown-bg a button {
+   background-color: #0099ff;
+   /* Button color */
+   color: #ffffff;
+   /* Text color */
+   border: none;
+   padding: 12px 24px;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+
+ .smackdown-bg a button:hover {
+   background-color: #052a61;
+   /* Darker color on hover */
+ }
+
+ .raw-bg a button {
+   background-color: #ff0000;
+   /* Button color */
+   color: #ffffff;
+   /* Text color */
+   border: none;
+   padding: 12px 24px;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+
+ .raw-bg a button:hover {
+   background-color: #610505;
+   /* Darker color on hover */
+ }
+
+ .mainevent-bg a button {
+   background-color: #ffbb00;
+   /* Button color */
+   color: #0a0404;
+   /* Text color */
+   border: none;
+   padding: 12px 24px;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+
+ .mainevent-bg a button:hover {
+   background-color: #886903;
+   /* Darker color on hover */
+ }
