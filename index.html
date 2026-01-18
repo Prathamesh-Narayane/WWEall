@@ -6,6 +6,12 @@
     <title>WWE</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+   <style>
+  video {
+      width: 100%;
+      max-width: 900px;
+    }
+    </style>
   <body>
       <img src="images/WWE.png" alt="WWE Logo" class="logo" />
       <h1>WWE</h1>
@@ -14,9 +20,20 @@
       <a href="smackdown.html"><button>SMACKDOWN</button></a>
       <a href="mainevnet.html"><button>MAIN EVENT</button></a>
     </div>
-    <div>
-      <video src="https://kashurflix.netlify.app/smax?mpd=https://ev-fast-mpd.starzplayarabia.com/live/eds/CricLife2/DASH/CricLife2.mpd&keyId=48bef83b4c6a3c5189b01b0126210da4&key=bd085230b7b09e50954fe0af111a8a9f"></video>
-    </div>
+   
+    
+  <video id="videoPlayer" controls autoplay muted></video>
+
+  <!-- dash.js -->
+  <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+
+  <script>
+    const video = document.getElementById("videoPlayer");
+    const url = "https://kashurflix.netlify.app/smax?mpd=https://ev-fast-mpd.starzplayarabia.com/live/eds/CricLife2/DASH/CricLife2.mpd&keyId=48bef83b4c6a3c5189b01b0126210da4&key=bd085230b7b09e50954fe0af111a8a9f";
+
+    const player = dashjs.MediaPlayer().create();
+    player.initialize(video, url, true);
+  </script>
 
   </body>
 </html>
